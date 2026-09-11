@@ -18,7 +18,17 @@ z=threading.Thread(target=study)
 z.start()
 
 x.join() 
+
+print(threading.active_count()) 
+print(threading.enumerate())    
+print(time.perf_counter()) 
+
 y.join()
+
+print(threading.active_count()) 
+print(threading.enumerate())    
+print(time.perf_counter()) 
+
 z.join()
 
 print(threading.active_count()) 
